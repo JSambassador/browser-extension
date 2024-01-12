@@ -1,0 +1,10 @@
+{
+    "name": "Lee extension",
+    "description": "First App",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "browser-action": {
+        "default_popup": "popup.html"
+    }
+
+}
