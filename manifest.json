@@ -1,10 +1,16 @@
 {
-    "name": "Lee extension",
+    "name": "Lee Clock",
     "description": "First App",
     "version": "0.1.0",
-    "manifest_version": 3,
-    "browser-action": {
-        "default_popup": "popup.html"
-    }
-
+    "manifest_version": 3, 
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"],
+            "css": ["style.css"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
 }
